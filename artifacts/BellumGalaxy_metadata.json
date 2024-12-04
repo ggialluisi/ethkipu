@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Interfaces, Libraries///",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PrimeiroSC.sol": "BellumGalaxy"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PrimeiroSC.sol": {
+			"keccak256": "0x341d02ffc323b553f1ed1a1a9e1d338d46f2446816c48919e3247724235da080",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://972bece61e3823042f1bf7b2f555dea136fb88b0985e25701f795f08a55b067b",
+				"dweb:/ipfs/QmcyNdL7hkD1b3Dm2xHK1U3KoW8y4FbLT1xa4ZNPHyjfTu"
+			]
+		}
+	},
+	"version": 1
+}

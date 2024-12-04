@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "externalFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalPayableFunction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_um",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dois",
+						"type": "uint256"
+					}
+				],
+				"name": "externalPureFunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_exemplo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalViewBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalViewFunction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_exemplo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalViewFunctionDois",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "s_contractOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "constructor///"
+				},
+				"externalFunction()": {
+					"notice": "external///"
+				},
+				"externalViewFunction()": {
+					"notice": "view & pure///"
+				},
+				"publicFunction()": {
+					"notice": "public///"
+				}
+			},
+			"notice": "Interfaces, Libraries///",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Exercicio1.sol": "Exercicio"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Exercicio1.sol": {
+			"keccak256": "0x7ebf06e91174b438773053ea25bee2780a9b15d61f2355cc1e4e255988393f02",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c70f086217ab252908f6b6e7b130d3c3a26eeb7a847921393e2179a03ef5bc3f",
+				"dweb:/ipfs/QmRuttwSJgc8uLLBZpDAHnbvXAgagiTk1rHQayUyd35rte"
+			]
+		}
+	},
+	"version": 1
+}
