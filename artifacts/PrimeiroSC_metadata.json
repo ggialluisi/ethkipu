@@ -6,9 +6,65 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "PrimeiroSC_NaoPermitido",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ADM_ONE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numero",
+						"type": "uint256"
+					}
+				],
+				"name": "condicional",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum PrimeiroSC.OrdemDeChamada",
+						"name": "_ordem",
+						"type": "uint8"
+					}
+				],
+				"name": "exemploEnum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -89,7 +145,65 @@
 			},
 			{
 				"inputs": [],
+				"name": "i_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numero",
+						"type": "uint256"
+					}
+				],
+				"name": "loops",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "publicFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "requireChecks",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "revertChecks",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -108,6 +222,38 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "s_uint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numero",
+						"type": "uint256"
+					}
+				],
+				"name": "whileBreak",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address payable",
@@ -119,6 +265,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -127,8 +277,18 @@
 			"version": 1
 		},
 		"userdoc": {
+			"errors": {
+				"PrimeiroSC_NaoPermitido()": [
+					{
+						"notice": "Errors///"
+					}
+				]
+			},
 			"kind": "user",
 			"methods": {
+				"condicional(uint256)": {
+					"notice": "Functions///"
+				},
 				"constructor": {
 					"notice": "constructor///"
 				},
@@ -163,11 +323,11 @@
 	},
 	"sources": {
 		"PrimeiroSC.sol": {
-			"keccak256": "0x2163aa2228794f16cd986c7cbd4575e87979cfacbaf94be3a71db23f9a3839a5",
+			"keccak256": "0xf2cf362b15332752025df311231013def62c5724526abf4e7b31427266827c5f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://105527bb7350230092509d74be2b094fe6b7a38b18d54593bc9b129cb40af7f7",
-				"dweb:/ipfs/QmUv511xkuAEwezHY6U2heYfvC4ERYxgBs5EPpYvCj8Fmk"
+				"bzz-raw://20dd9280d955b96ff1312af3800242859c64c4815cfa30f058cb76e510fd770d",
+				"dweb:/ipfs/QmP2k31CRydh6gjP3fE7p4hcAnxLAVaayA2ojbNtwUhv2L"
 			]
 		}
 	},
