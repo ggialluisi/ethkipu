@@ -17,9 +17,33 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "Exercicio5_NotTheOwner",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "Exercicio5Guba_NotTheOwner",
 				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "newInfo",
+						"type": "string"
+					}
+				],
+				"name": "Exercicio5Guba_InfoSet",
+				"type": "event"
 			},
 			{
 				"inputs": [],
@@ -109,7 +133,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Exercicio5.sol": "ChangeCounterConstructor"
+			"Exercicio6.sol": "Exercicio5Guba"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -123,12 +147,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Exercicio5.sol": {
-			"keccak256": "0xa398deedf8c6219b582abdbe0d4402a857b6a707d76ff1fe939a4f32d3ce2e9d",
+		"Exercicio6.sol": {
+			"keccak256": "0x30d7b9fcf40418ead9ad03104211f755c0f46567eafc9ff84e12483be63cddf1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://94abc73adba2ef491227ee01984fec2663684e1cf1c3dfb737a987de5693a297",
-				"dweb:/ipfs/Qme7GjLDnwvjUNGUGj8eLQXYKV287iwGD6D7jbownF4Jng"
+				"bzz-raw://b6bf3a8d89f2048d7ca696001d62315d32ba4100d7d3784c82fee5462b8b2c9a",
+				"dweb:/ipfs/Qmaj2krd6CM5naQK7JDqHHzMcyWHQ1m97rczXjpnzoJKA3"
 			]
 		}
 	},

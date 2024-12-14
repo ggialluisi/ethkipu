@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idade",
+						"type": "uint256"
+					}
+				],
+				"name": "atualizarIdade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_idade",
+						"type": "uint256"
+					}
+				],
+				"name": "criarPessoa",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"name": "s_mappingPessoa",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ativo",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "s_pessoa",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ativo",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "s_pessoas",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ativo",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ExemploDeStruct.sol": "ExemploDeStruct"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ExemploDeStruct.sol": {
+			"keccak256": "0x05085e5bc86aa6823ca40caf0d8b176d517ab9437c97f196a73edd09f395c4f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1516f087244b7081dea2be136b39d8a1d33ceb80f05589ad286729ea5962dd10",
+				"dweb:/ipfs/QmVi1dKaagDR2QLcrNBkbiTitZHNC4TN3HmctPeNq2EFk7"
+			]
+		}
+	},
+	"version": 1
+}
