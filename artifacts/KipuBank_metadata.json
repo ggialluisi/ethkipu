@@ -1,0 +1,412 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_bankCap_inWei",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "KipuBank_BadRequest_ContractIsInactive",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deposit_value_tried",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_blocked_value_to_be",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_bank_cap",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_BadRequest_ExceedsDepositLimit",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdraw_value_tried",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdraw_limit",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_BadRequest_ExceedsWithdrawLimit",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdraw_value_tried",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_BadRequest_InvalidReceiverAddress",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdraw_value_tried",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_BadRequest_NotEnoughtBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "KipuBank_BadRequest_NotTheOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_error",
+						"type": "bytes"
+					}
+				],
+				"name": "KipuBank_ServerError_ErrorOnCall",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"name": "KipuBank_ActiveToggled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "msg_value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_DepositSucceeded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"name": "KipuBank_WithdrawSucceeded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bankCap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentDepositLimit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "depositForSender",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isContractActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "toggleActive_ownerOnly",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountInWei",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawForReceiver_ownerOnly",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountInWei",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawForSender",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"balance(address)": {
+					"details": "Returns the balance of the informed wallet "
+				},
+				"constructor": {
+					"details": "sets _owner for the publisher, and publishes contract as active",
+					"params": {
+						"_bankCap_inWei": "sets the maximum limit of global balance of the contract, in WEI"
+					}
+				},
+				"depositForSender()": {
+					"details": "deposits value in WEI for the msg.sender "
+				},
+				"isContractActive()": {
+					"details": "Returns state variable s_isActive"
+				},
+				"toggleActive_ownerOnly()": {
+					"details": "turns isActive to !isActive"
+				},
+				"withdrawForReceiver_ownerOnly(address,uint256)": {
+					"details": "Withdraw for informed address. Only the contract owner can do this.",
+					"params": {
+						"_amountInWei": "value in WEI to be withdrawn",
+						"_receiver": "address for the withdraw"
+					}
+				},
+				"withdrawForSender(uint256)": {
+					"details": "withdraw for the conected address withdraw will be made for the msg.sender address ",
+					"params": {
+						"_amountInWei": "value in WEI to be withdrawn"
+					}
+				}
+			},
+			"title": "KipuBank",
+			"version": 1
+		},
+		"userdoc": {
+			"errors": {
+				"KipuBank_BadRequest_NotTheOwner(address)": [
+					{
+						"notice": "Errors///"
+					}
+				]
+			},
+			"events": {
+				"KipuBank_ActiveToggled(bool)": {
+					"notice": "Events///"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"balance(address)": {
+					"notice": "Returns the balance of the informed address "
+				},
+				"bankCap()": {
+					"notice": "Returns the balance limit set on this contract "
+				},
+				"currentDepositLimit()": {
+					"notice": "Returns the current available value to be deposited "
+				},
+				"isContractActive()": {
+					"notice": "Is this contract active? "
+				},
+				"toggleActive_ownerOnly()": {
+					"notice": "possibility to turn off the contract, if something goes wrong"
+				}
+			},
+			"notice": "trabalho de conclusao de EDP BR - Modulo 2: Fundamentos de Solidityauthor Gustavo P Gialluisi",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"KipuBank.sol": "KipuBank"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"KipuBank.sol": {
+			"keccak256": "0xe7c04f2dcfdbc3fe0b19498c5d1f7f8eecd2dd49ea5afea25980b0224042c292",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f78a28be2acd2864516f245fb1a502f6c16eff22dd96dabbeadf6d57c321786c",
+				"dweb:/ipfs/QmdTeriwcSkQSj6EG8GUWzTdfnXYrgsvrPPvxKhTM7RWXA"
+			]
+		}
+	},
+	"version": 1
+}

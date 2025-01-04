@@ -133,7 +133,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Exercicio6.sol": "Exercicio5Guba"
+			"Exercicio5.sol": "Exercicio5Guba"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -147,7 +147,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Exercicio6.sol": {
+		"Exercicio5.sol": {
 			"keccak256": "0x30d7b9fcf40418ead9ad03104211f755c0f46567eafc9ff84e12483be63cddf1",
 			"license": "MIT",
 			"urls": [

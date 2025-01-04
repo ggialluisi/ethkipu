@@ -54,6 +54,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "depositForSender",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "enum PrimeiroSC.OrdemDeChamada",
@@ -71,13 +78,6 @@
 				"name": "externalFunction",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "externalPayableFunction",
-				"outputs": [],
-				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -323,11 +323,11 @@
 	},
 	"sources": {
 		"PrimeiroSC.sol": {
-			"keccak256": "0xf2cf362b15332752025df311231013def62c5724526abf4e7b31427266827c5f",
+			"keccak256": "0xc14ac6b78bb44c4fd91a5ed0d6a8928431e579be9f45f2b18951a5b947155aaf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://20dd9280d955b96ff1312af3800242859c64c4815cfa30f058cb76e510fd770d",
-				"dweb:/ipfs/QmP2k31CRydh6gjP3fE7p4hcAnxLAVaayA2ojbNtwUhv2L"
+				"bzz-raw://68a308949e29df946cabe5181a1de089c18d19a13d855e6f1703d165d013aba9",
+				"dweb:/ipfs/QmdSgobPYUYF79wXwUsKRFEps9Gvj2BpgmpaEVQAfMEJNk"
 			]
 		}
 	},

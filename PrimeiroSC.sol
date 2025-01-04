@@ -129,7 +129,7 @@ contract PrimeiroSC {
         // solo accesible desde fuera del contrato
         //external -> mais barata!!
     }
-    function externalPayableFunction() external payable {
+    function depositForSender() external payable {
         // 'payable' permite que ETH seja enviado como VALUE ao executar o contrato.
         // valor passado é armazenado como balance
     }
